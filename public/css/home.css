@@ -98,7 +98,7 @@ a { color: white; }
     text-align: center;
     justify-content: center;
 }
-#scobies a:hover {
+#planets a:hover {
     background: #3f4e63;
 }
 @media (max-width: 700px) {

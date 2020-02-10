@@ -21,7 +21,7 @@
                 <h1>orbit</h1>
                     
                 <div id="about">
-                    <p>a page creator built on <a href="https://are.na">are.na</a>. connect a channel to the <a href="https://www.are.na/tg-z/orbit">mother channel</a> to create a site. style it by by adding a block titled "stylesheet" with some CSS to your channel. watch a <a href="http://video.elliott.computer/scoby-tutorial.mp4">short tutorial</a>.</p>
+                    <p>a page creator built on <a href="https://are.na">are.na</a>. connect a channel to the <a href="https://www.are.na/tg-z/orbit">mother channel</a> to create a site. style it by by adding a block titled "stylesheet" with some css to your channel. orbit is a shameful clone of scoby.page by elliot.computer.</p>
                 </div>
     
             </div>
@@ -40,7 +40,7 @@
                 fetch('/api/sites')
                 .then(response => response.json())
                 .then(data => {
-                    var scobies = document.getElementById('planets');
+                    var planets = document.getElementById('planets');
 
                     var shuffled_data = shuffle(data.contents);
 
