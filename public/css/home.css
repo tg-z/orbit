@@ -6,8 +6,8 @@ body {
     -webkit-font-smoothing: antialiased;
     -webkit-text-size-adjust: none;
     -moz-osx-font-smoothing: grayscale;
-    background: #fcedbe;
-    color: #1f1209;
+    background: #212934;
+    color: #3f4e63;
 }
 h1, h2, h3, h4, a, ul, ol, li, p, figure {
     /* font-size: 14px;
@@ -29,7 +29,7 @@ ul li {
     margin-bottom: 1em;
 }
 #home {
-    color: #073a0a;
+    color: white;
 }
 h1 {
     font-size: 300% !important;
@@ -48,7 +48,7 @@ input {
     border: 1px solid #c5c5c5;
     padding: 5px;
     font-size: 100%;
-    color: #073a0a;
+    color: white;
     -webkit-appearance: none;
 }
 #color {
@@ -62,7 +62,7 @@ input {
     border-radius: 5px;
     background: #e0e0e0;
 }
-a { color: #073a0a; }
+a { color: white; }
 #welcome {
     display: grid;
     grid-template-columns: 200px .6fr;
@@ -73,23 +73,23 @@ a { color: #073a0a; }
     margin: 10px 0;
     line-height: 25px;
 }
-#scobies {
+#planets {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     /* grid-template-rows: repeat(auto-fit, 70px); */
     grid-gap: 10px;
 }
-#scobies a {
+#planets a {
     /* max-height: 100px; */
     /* height: 200px; */
     /* width: 150px; */
     /* height: 150px; */
-    border: 1px solid #073a0a;
+    border: 1px solid black;
     /* border-radius: 100%; */
     padding: 1em;
     /* background: #f3eacb; */
     text-decoration: none;
-    border-radius: 8px;
+    border-radius: 25px;
     font-size: 14px;
     /* float: left; */
     /* margin: 5px; */
@@ -99,7 +99,7 @@ a { color: #073a0a; }
     justify-content: center;
 }
 #scobies a:hover {
-    background: #e9dfbc;
+    background: #3f4e63;
 }
 @media (max-width: 700px) {
     #welcome {
