@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Scoby</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <link rel="shortcut icon" type="image/png" href="images/favicon.png">
+        <link href="css/home.css" rel="stylesheet">
+        <!-- twitter -->
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:title" content="Scoby">
+        <meta name="twitter:description" content="Create pages with Are.na">
+        <meta name="twitter:image" content="https://scoby.page/images/social.jpg">
+    </head>
+        
+    <body>
+
+        <main id="home">
+            <div id="welcome">
+                <h1>Scoby</h1>
+                    
+                <div id="about">
+                    <p>A page creator built on <a href="https://are.na">Are.na</a>. Connect a channel to the <a href="https://www.are.na/elliott-cost/scoby">mother channel</a> to create a Scoby. Style your Scoby by adding a block titled "stylesheet" with some CSS to your channel. Watch a <a href="http://video.elliott.computer/scoby-tutorial.mp4">short tutorial</a>.</p>
+                </div>
+    
+            </div>
+
+        </main>
+
+        <div id="scobies">
+        </div>
+
+        <script>
+            document.addEventListener("DOMContentLoaded", function(){
+                getSites();
+            });
+
+            function getSites() {
+                fetch('/api/sites')
+                .then(response => response.json())
+                .then(data => {
+                    var scobies = document.getElementById('scobies');
+
+                    var shuffled_data = shuffle(data.contents);
+
+                    console.log(shuffled_data);
+
+                    shuffled_data.map((item) => {
+                        if (item.class == 'Channel') {
+                            var link = `
+                                <a href="${item.slug}">${item.title}</a>
+                            `;
+                            scobies.insertAdjacentHTML('beforeend', link);
+                        }
+                    })
+                })
+                .catch(error => console.error(error))
+            }
+
+            function shuffle(array) {
+                var currentIndex = array.length, temporaryValue, randomIndex;
+                // While there remain elements to shuffle...
+                while (0 !== currentIndex) {
+                    // Pick a remaining element...
+                    randomIndex = Math.floor(Math.random() * currentIndex);
+                    currentIndex -= 1;
+                    // And swap it with the current element.
+                    temporaryValue = array[currentIndex];
+                    array[currentIndex] = array[randomIndex];
+                    array[randomIndex] = temporaryValue;
+                }
+                return array;
+            }
+        </script>
+
+    </body>
+</html>
