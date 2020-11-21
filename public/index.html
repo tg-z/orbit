@@ -10,8 +10,7 @@
         <!-- twitter -->
         <meta name="twitter:card" content="summary_large_image">
         <meta name="twitter:title" content="planets">
-        <meta name="twitter:description" content="create pages with are.na">
-        <meta name="twitter:image" content="https://scoby.page/images/social.jpg">
+        <meta name="twitter:description" content="create webpages with are.na">
     </head>
         
     <body>
@@ -49,7 +48,7 @@
                     shuffled_data.map((item) => {
                         if (item.class == 'Channel') {
                             var link = `
-                                <a href="${item.slug}">${item.title}</a>
+                                <a href="${item.slug}" target="_blank">${item.title}</a>
                             `;
                             planets.insertAdjacentHTML('beforeend', link);
                         }

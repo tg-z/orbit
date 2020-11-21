@@ -27,7 +27,7 @@ app.get('/api/:site', function(req, res){
   // amount of blocks to return per request and the
   // actual amount of requests needed to load content
   arena.channel(req.params.site).contents({ page: req.query.page ? req.query.page : 1, 
-    per: req.query.per ? req.query.per : 24,
+    per: req.query.per ? req.query.per : 32,
     direction: 'desc',
     sort: 'position'
    })

@@ -9,9 +9,8 @@
         <link href="css/page.css" rel="stylesheet">
         <!-- twitter -->
         <meta name="twitter:card" content="summary_large_image">
-        <meta name="twitter:title" content="Scoby">
-        <meta name="twitter:description" content="Create pages with Are.na">
-        <meta name="twitter:image" content="https://scoby.page/images/social.jpg">
+        <meta name="twitter:title" content="planets">
+        <meta name="twitter:description" content="create pages with are.na">
 
     </head>
         
@@ -63,7 +62,7 @@
                     } else if (item.class == 'Link') {
                         div.classList.add("link");
                         div.innerHTML = `
-                                <a href="${item.source.url}">${item.source.url}</a>
+                                <a href="${item.source.url}" target="_blank">${item.source.url}</a>
                             `;
                     } else if (item.class == 'Image') {
                         div.classList.add("image");
