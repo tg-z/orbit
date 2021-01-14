@@ -78,6 +78,13 @@ input {
     right: 2em;
     z-index: 10000;
 }
+#repo a {
+    color: var(--gray);
+    transition: color .5s ease;
+}
+#repo a:hover {
+    color: var(--black);
+}
 #post{
     position: fixed;
     top: 7em;
@@ -131,7 +138,7 @@ input {
     justify-content: center;
 }
 #planets a:hover {
-    background: #3f4e63;
+    border: 1px dashed black;
 }
 @media (max-width: 700px) {
     #welcome {
