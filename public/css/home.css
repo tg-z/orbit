@@ -6,8 +6,22 @@ body {
     -webkit-font-smoothing: antialiased;
     -webkit-text-size-adjust: none;
     -moz-osx-font-smoothing: grayscale;
-    background: #252e3b;
-    color: #3f4e63;
+    background: #fff;
+    color: black;
+}
+:root {
+  --background: #fff;
+  --foreground: #333;
+  --black: black;
+  --gray: #828282;
+  --ltgray: #BDBDBD;
+}
+a {
+  color: var(--black);
+  /* transition: color .5s ease; */
+}
+a:hover {
+  color: var(--black);
 }
 h1, h2, h3, h4, a, ul, ol, li, p, figure {
     /* font-size: 14px;
@@ -29,7 +43,7 @@ ul li {
     margin-bottom: 1em;
 }
 #home {
-    color: white;
+    color: black;
 }
 h1 {
     font-size: 300% !important;
@@ -48,8 +62,27 @@ input {
     border: 1px solid #c5c5c5;
     padding: 5px;
     font-size: 100%;
-    color: white;
+    color: black;
     -webkit-appearance: none;
+}
+#toggle-theme{
+    position: fixed;
+    top: 2.5em;
+    right: 2em;
+    z-index: 10000;
+}
+#repo{
+    position: fixed;
+    font-size: 15px;
+    bottom: 2em;
+    right: 2em;
+    z-index: 10000;
+}
+#post{
+    position: fixed;
+    top: 7em;
+    right: 2em;
+    z-index: 10000;
 }
 #color {
     height: 50px;
@@ -62,15 +95,14 @@ input {
     border-radius: 5px;
     background: #e0e0e0;
 }
-a { color: white; }
 #welcome {
     display: grid;
     grid-template-columns: 200px .6fr;
-    grid-gap: 1em;
+    grid-gap: 3em;
 }
 #about {
     font-size: 16px !important;
-    margin: 10px 0;
+    margin: 20px 20px 20px 20px;
     line-height: 25px;
 }
 #planets {
