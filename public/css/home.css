@@ -30,7 +30,7 @@ h1, h2, h3, h4, a, ul, ol, li, p, figure {
     padding: 0;
 }
 h1 {
-    font-weight: bold; 
+    font-weight: bold;
 }
 h1, h2, h3, h4, ul, ol, p {
     margin-bottom: 1.3em;
@@ -50,7 +50,7 @@ h1 {
     margin-bottom: .5em !important;
 }
 h1, h2 {
-    font-weight: bold; 
+    font-weight: bold;
 }
 label {
     display: inline-block;
@@ -104,7 +104,7 @@ input {
 }
 #welcome {
     display: grid;
-    grid-template-columns: 200px .6fr;
+    grid-template-columns: 200px .7fr;
     grid-gap: 3em;
 }
 #about {
@@ -127,7 +127,7 @@ input {
     /* border-radius: 100%; */
     padding: 1em;
     text-decoration: none;
-    border-radius: 25px;
+    border-radius: 8px;
     font-size: 14px;
     /* float: left; */
     /* margin: 5px; */
@@ -137,7 +137,7 @@ input {
     justify-content: center;
 }
 #planets a:hover {
-    border: 1px dashed black;
+    border: 1px solid black;
 }
 @media (max-width: 700px) {
     #welcome {

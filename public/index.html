@@ -17,13 +17,13 @@
 
         <main id="home">
             <div id="welcome">
-                <h1><a href="https://orbitgen.now.sh"><img src="images/orbit.svg" alt="orbit" height="200" width="200"></a></h1>
+                <h1><a href="https://orbit.tg-z.vercel.app"><img src="images/orbit.svg" alt="orbit" height="200" width="200"></a></h1>
 
 	<div id="toggle-theme"><img src="images/loading-icon.svg" alt="loading" height="15" weight="15"></div>
 	<div id="repo"><a href="https://git.sr.ht/~tg-z/orbit" target="_blank">source code</a></div>
 
                 <div id="about">
-                    <p><strong>orbit</strong>: n. <br>a page creator built on <a href="https://are.na">are.na</a>. connect a channel to the <a href="https://www.are.na/tg-z/orbit">mother channel</a> to create a site. style it by by adding a block titled "stylesheet" with some css to your channel. <br><strong>orbit</strong> is a shameful clone of <a href="https://scoby.page" target="_blank">scoby.page</a> by <a href="https://elliott.computer" target="_blank">elliott.computer</a>.</p>
+                    <p><strong>orbit</strong>: n. <br>a page creator built on <a href="https://are.na">are.na</a>. connect a channel to the <a href="https://www.are.na/tg-z/orbit">mother channel</a> to create a site. style it by by adding a block titled "stylesheet" with some css to your channel. <br><strong>orbit</strong> is a shameful clone of <a href="https://scoby.page" target="_blank">scoby</a> by <a href="https://elliott.computer" target="_blank">elliott.computer</a>.</p>
                 </div>
     
             </div>
@@ -51,7 +51,7 @@
                     shuffled_data.map((item) => {
                         if (item.class == 'Channel') {
                             var link = `
-                                <a href="${item.slug}" target="_blank">${item.title}</a>
+                                <a href="${item.slug}">${item.title}</a>
                             `;
                             planets.insertAdjacentHTML('beforeend', link);
                         }

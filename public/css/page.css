@@ -1,4 +1,3 @@
-* { box-sizing: border-box; }
 /* body {
     padding: 10px;
     font-family: Arial, Helvetica, sans-serif;
@@ -7,47 +6,65 @@
     -moz-osx-font-smoothing: grayscale;
     background: #ffffff;
     color: #1f1209;
-} */
-/* h1, h2, h3, h4, a, ul, ol, li, p, figure {
+}
+
+h1, h2, h3, h4, a, ul, ol, li, p, figure {
     font-size: 14px;
     font-weight: normal;
     margin: 0;
     padding: 0;
 }
+
 h1 {
     font-weight: bold; 
 }
+
 h1, h2, h3, h4, ul, ol, p {
     margin-bottom: 1.3em;
 }
+
 ol li, ul li {
     list-style-position: inside;
 }
+
 ul li {
     list-style-type: none;
 }
+
 #blocks div {
     margin-bottom: 1em;
 }
+
 #blocks div img, #blocks div video {
-    max-width: 100%;;
+    max-width: 100%;
 }
+
+#blocks div, img {
+padding: 20px;
+margin: 0;
+display: grid;
+color: #3c3cff;
+}
+
+p, a, #load-more, #loading {
+font-size: 20px;
+!important;
+text-decoration: none;
+}
+
+a:hover {
+color: #28286d;
+text-decoration: none;
+}
+
+img { max-height: 200px; }
+
+
 #title {
     margin-bottom: 2em;
 }
-a {
-    color: #000;
-} */
 
-#load-more {
-    /* outline: none;
-    border: 1px solid black; */
-    cursor: pointer;
-    display: none;
-    padding: 2px;
-}
-
-/* #load-more, #loading {
+#load-more, #loading {
     width: 100%;
     padding: 2rem;
     border-radius: 50%;
@@ -60,5 +77,63 @@ a {
     border-radius: 2rem;
 } */
 
-#load-more.able-to-load {display: block}
-#loading.done-loading {display: none}
+/* footer {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 1rem;
+    position: fixed;
+    bottom: 0;
+    z-index: 9998;
+    left: 0;
+    pointer-events: none;
+} */
+
+* { box-sizing: border-box; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+p, a {
+    font-size: 16px;
+    margin: 2.5em;
+    line-height:25px ;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+    margin: 2px auto;
+    display: block;
+}
+
+#load-more {
+    text-align: center;
+    margin: 2em;
+    margin-bottom: 3em;
+    cursor: pointer;
+    display: none;
+    padding: 2px;
+}
+
+#load-more.able-to-load {
+    display: block;
+}
+
+#loading.done-loading {
+    display: none;
+}
+
+#load-more, #loading {
+    margin-top: 8px;
+    font-size: initial;
+    padding: 1em;
+    border-radius: 0;
+    background: white;
+    border: 1px solid rgb(219, 219, 219);
+}
+
+#load-more:hover {
+    border-radius:0;
+}
