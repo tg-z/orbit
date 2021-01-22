@@ -139,6 +139,13 @@ input {
 #planets a:hover {
     border: 1px solid black;
 }
+footer {
+  text-align: center;
+  padding: 30px;
+  clear: both;
+  position: relative;
+  display: block;
+}
 @media (max-width: 700px) {
     #welcome {
         grid-template-columns: 1fr;
