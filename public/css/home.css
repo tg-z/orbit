@@ -1,30 +1,26 @@
 * { box-sizing: border-box; }
+:root {
+  --ltbackground: #fff;
+  --ltforeground: #333;
+  --gray: #828282;
+  --ltgray: #BDBDBD;
+}
 body {
     padding: 8px;
-    /* line-height: 30px; */
     font-family: Arial, Helvetica, sans-serif;
     -webkit-font-smoothing: antialiased;
     -webkit-text-size-adjust: none;
     -moz-osx-font-smoothing: grayscale;
-    background: #fff;
-    color: black;
-}
-:root {
-  --background: #fff;
-  --foreground: #333;
-  --black: black;
-  --gray: #828282;
-  --ltgray: #BDBDBD;
+    background: var(--ltbackground);
+    color: var(--ltforeground);
 }
 a {
-  color: var(--black);
-  /* transition: color .5s ease; */
+  color: var(--ltforeground);
 }
 a:hover {
-  color: var(--black);
+  color: var(--ltforeground);
 }
 h1, h2, h3, h4, a, ul, ol, li, p, figure {
-    /* font-size: 14px;
     font-weight: normal; */
     margin: 0;
     padding: 0;
@@ -43,7 +39,7 @@ ul li {
     margin-bottom: 1em;
 }
 #home {
-    color: black;
+    color: var(--ltforeground);
 }
 h1 {
     font-size: 300% !important;
@@ -55,15 +51,6 @@ h1, h2 {
 label {
     display: inline-block;
     margin-bottom: .2em;
-}
-input {
-    width: 100%;
-    margin-bottom: 1em;
-    border: 1px solid #c5c5c5;
-    padding: 5px;
-    font-size: 100%;
-    color: black;
-    -webkit-appearance: none;
 }
 #toggle-theme{
     position: fixed;
@@ -83,7 +70,7 @@ input {
     transition: color .5s ease;
 }
 #repo a:hover {
-    color: var(--black);
+    color: var(--ltforeground);
 }
 #post{
     position: fixed;
@@ -115,33 +102,25 @@ input {
 #planets {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    /* grid-template-rows: repeat(auto-fit, 70px); */
     grid-gap: 10px;
 }
 #planets a {
-    /* max-height: 100px; */
-    /* height: 200px; */
-    /* width: 150px; */
-    /* height: 150px; */
-    border: 1px solid black;
-    /* border-radius: 100%; */
+    border: 1px solid var(--ltforeground);
     padding: 1em;
     text-decoration: none;
     border-radius: 8px;
     font-size: 14px;
-    /* float: left; */
-    /* margin: 5px; */
     display: flex;
     align-items: center;
     text-align: center;
     justify-content: center;
 }
 #planets a:hover {
-    border: 1px solid black;
+    border: 1px solid var(--ltforeground);
 }
 footer {
   text-align: center;
-  padding: 30px;
+  padding: 40px;
   clear: both;
   position: relative;
   display: block;
