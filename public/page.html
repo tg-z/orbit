@@ -52,7 +52,7 @@
                     } else if (item.class == 'Link') {
                         div.classList.add("link");
                         div.innerHTML = `
-                                <a href="${item.source.url}" target="_blank">${item.source.url}</a>
+                                <a href="${item.source.url}" class="block_link" target="_blank">${item.title}</a>
                             `;
                     } else if (item.class == 'Image') {
                         div.classList.add("image");
@@ -68,6 +68,12 @@
                                         <source src="${item.attachment.url}" type="video/mp4">
                                     </video>
                                 `;
+			else if (item.class == 'Attachment') {
+			  if (item.attachment.content_type == 'application/pdf') {
+			      div.classList.add"pdf");
+			      div.innerHTML = `
+			      <a href="${item.attachment.url}" target="_blank" class="block_pdf">
+			      ${item.title}<img src="${item.image.large.url}" alt="pdf thumbnail"/></a>
                         }
                     }
                     if (item.title == 'stylesheet') {

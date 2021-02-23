@@ -98,7 +98,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 p, a {
     font-size: 16px;
     margin: 2.5em;
-    line-height:25px ;
+    line-height:25px;
 }
 
 img {
@@ -136,4 +136,9 @@ img {
 
 #load-more:hover {
     border-radius:0;
+}
+
+.block_link {
+    color: blue;
+    display: block;
 }
