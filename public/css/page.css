@@ -142,3 +142,8 @@ img {
     color: blue;
     display: block;
 }
+
+.block_pdf {
+    display: block;
+    border: 1px solid black;
+}
