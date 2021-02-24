@@ -142,7 +142,7 @@ img {
     border-radius:0;
 }
 
-.block_link {
+.block_link, .block_link:visited {
     color: blue;
     display: block;
 }
