@@ -68,13 +68,6 @@
                                         <source src="${item.attachment.url}" type="video/mp4">
                                     </video>
                                 `;
-			else if (item.class == 'Attachment') {
-			  if (item.attachment.content_type == 'application/pdf') {
-			      div.classList.add"pdf");
-			      div.innerHTML = `
-			      <a href="${item.attachment.url}" target="_blank" class="block_pdf">
-			      ${item.title}<img src="${item.image.large.url}" alt="pdf thumbnail"/></a>
-			      `;
                         }
                     }
                     if (item.title == 'stylesheet') {
