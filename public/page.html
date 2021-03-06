@@ -43,7 +43,6 @@ function init() {
 function setupContent(data) {
 	data.map((item) => {
 		var div = document.createElement("div");
-		// console.log(item);
 		if (item.class == "Text") {
 			div.classList.add("text");
 			div.innerHTML = `
