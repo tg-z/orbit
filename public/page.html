@@ -43,11 +43,6 @@ function init() {
 function setupContent(data) {
 	data.map((item) => {
 		var div = document.createElement("div");
-		<!-- if (item.title) { -->
-		<!-- 	div.classList.add("channel-info"); -->
-		<!-- 	div.innerHTML = ` -->
-		<!-- 		<h1>${item.title}</h1> -->
-		<!-- 		`; -->
 		if (item.class == "Text") {
 			div.classList.add("text");
 			div.innerHTML = `
@@ -66,9 +61,22 @@ function setupContent(data) {
 		} else if (item.class == "Image") {
 			div.classList.add("image");
 			div.innerHTML = `
-				<figure><img src="${item.image.large.url}" alt="${item.title}"/></figure>
+				<figure><img src="${item.image.large.url}" alt="${item.description}" title="${item.title}"/></figure>
                                 <caption>${item.content}</caption>
                             `;
+	/*	} else if (item.class == "Attachment") {
+			if (item.attachment.content_type == "application/pdf") {
+				div.classList.add("pdf");
+				div.innerHTML = `
+				   <!-- <div class="pdf_link"> -->
+				   <a href="${item.attachment.url}" target="_blank"><img src="${block.image.large.url}"></a>
+				   <!-- <div class="pdf_link_img-container"> -->
+				   <!-- <img src=${item.image.display.url} /></div> -->
+				   <p class="pdf_link_title"><strong>${item.generated_title}</strong></p>
+				   <p class="pdf_link_desc">${item.description}</p>
+				   <p class="pdf_link_src">${item.attachment.url}</p></a>
+				   </div>
+				   `; */
 		} else if (item.class == "Attachment") {
 			if (item.attachment.content_type == "video/mp4") {
 				div.classList.add("video");

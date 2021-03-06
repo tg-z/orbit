@@ -4,6 +4,12 @@
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }
+:root {
+	--background: #fff;
+	--foreground: #333;
+	--gray: #828282;
+	--ltgray: #bdbdbd;
+}
 
 article,
 aside,
@@ -27,7 +33,7 @@ a {
 }
 
 a:visited {
-	color: blue;
+	color: inherit;
 }
 
 img {
@@ -70,7 +76,7 @@ img {
 
 .link,
 .link:visited {
-	color: blue;
+	color: inherit;
 	display: block;
 }
 
@@ -96,4 +102,111 @@ img {
 	max-width: 100%;
 	margin: 0 auto;
 	display: block;
+}
+
+.pdf {
+	width: 100%;
+	max-width: 30em;
+	overflow-x: hidden;
+	margin: 0 auto;
+	display: block;
+	padding: 0 1rem;
+}
+
+.pdf > *:first-child,
+.pdf > *:first-child > *:first-child {
+	margin-top: 0;
+}
+
+.pdf_text > h1 {
+	font-size: 2.25rem;
+	margin: 2em 0 0.5em 0;
+}
+.pdf_text > h2 {
+	font-size: 2rem;
+	margin: 2em 0 0.5em 0;
+}
+.pdf_text > h3 {
+	font-size: 1.25rem;
+	margin: 1.5em 0 0.5em 0;
+}
+.pdf_text > p {
+	line-height: 1.5;
+	margin-bottom: 2em;
+}
+.pdf_text a {
+	color: inherit;
+	transition: color 0.3s ease;
+}
+.pdf_text a:hover {
+	color: var(--gray);
+}
+
+.pdf_image {
+	margin: 2em auto;
+}
+.pdf_image > * {
+	display: block;
+	max-width: 100%;
+	margin: 0 auto;
+}
+
+.pdf_link {
+	display: block;
+	position: relative;
+	overflow: hidden;
+	width: 100%;
+	border: 1px solid var(--gray);
+	border-radius: 0.25rem;
+	text-decoration: none;
+	margin: 2em auto;
+}
+.pdf_link a {
+	color: inherit;
+	text-decoration: none;
+}
+.pdf_link:hover {
+	border-color: var(--foreground);
+}
+
+.pdf_link_img-container {
+	position: relative;
+	height: 0;
+	width: 100%;
+	padding-bottom: 50%;
+	overflow: hidden;
+	border-bottom: 1px solid var(--gray);
+	z-index: 1;
+}
+.pdf_link_img-container img {
+	display: block;
+	position: absolute;
+	width: 100%;
+}
+
+.pdf_link_title,
+.pdf_link_desc,
+.pdf_link_src {
+	font-size: 1rem;
+	margin: 0.5rem;
+}
+.pdf_link_title {
+	margin-top: 1em;
+}
+.pdf_link_title:hover {
+	text-decoration: underline;
+}
+.pdf_link_desc {
+	overflow: hidden;
+	-webkit-line-clamp: 2;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+}
+.pdf_link_src {
+	color: var(--gray);
+	margin-bottom: 1rem;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+	width: 90%;
 }
