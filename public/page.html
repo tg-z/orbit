@@ -65,17 +65,11 @@ function setupContent(data) {
                                 <caption>${item.content}</caption>
                             `;
 	/*	} else if (item.class == "Attachment") {
-			if (item.attachment.content_type == "application/pdf") {
-				div.classList.add("pdf");
+			if (item.attachment.extension == "pdf") {
+				div.classList.add("thumbnail");
 				div.innerHTML = `
-				   <!-- <div class="pdf_link"> -->
-				   <a href="${item.attachment.url}" target="_blank"><img src="${block.image.large.url}"></a>
-				   <!-- <div class="pdf_link_img-container"> -->
-				   <!-- <img src=${item.image.display.url} /></div> -->
-				   <p class="pdf_link_title"><strong>${item.generated_title}</strong></p>
-				   <p class="pdf_link_desc">${item.description}</p>
-				   <p class="pdf_link_src">${item.attachment.url}</p></a>
-				   </div>
+				   <p><strong>${item.generated_title}</strong></p>
+				   <a href="${item.attachment.url}" target="_blank"><img src="${item.image.large.url}"></a>
 				   `; */
 		} else if (item.class == "Attachment") {
 			if (item.attachment.content_type == "video/mp4") {
