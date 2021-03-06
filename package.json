@@ -1,10 +1,10 @@
 {
-  "name": "arena-site-generator",
+  "name": "orbit",
   "version": "1.0.0",
   "description": "",
   "main": "app.js",
   "scripts": {
-    "start": "node app.js",
+    "start": "nodemon app.js",
     "dev": "nodemon app.js"
   },
   "author": "",

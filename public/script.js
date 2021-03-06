@@ -1,23 +1,3 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <title>orbit</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width,initial-scale=1.0">
-	<link rel="shortcut icon" type="image/png" href="images/are.na-icon.svg">
-        <link href="css/page.css" rel="stylesheet">
-        <!-- twitter -->
-        <meta name="twitter:card" content="summary_large_image">
-        <meta name="twitter:title" content="orbit">
-        <meta name="twitter:description" content="create pages with are.na">
-    </head>
-    <body>
-        <div id="blocks">
-        </div>
-        <div id='loading'>...</div>
-        <button id='load-more'>Load more</button>
-<script type="module">
 const path = window.location.pathname;
 const pretty_title = path.slice(1);
 const head = document.getElementsByTagName("head");
@@ -54,11 +34,6 @@ function setupContent(data) {
 			div.innerHTML = `
                                 <a href="${item.source.url}" class="block_link" target="_blank">${item.title}</a>
                             `;
-		} else if (item.class == "Media") {
-			div.classList.add("media");
-			div.innerHTML = `
-			        ${item.embed.html}
-				`;
 		} else if (item.class == "Image") {
 			div.classList.add("image");
 			div.innerHTML = `
@@ -73,6 +48,11 @@ function setupContent(data) {
                                         <source src="${item.attachment.url}" type="video/mp4">
                                     </video>
                                 `;
+		} else if (item.class == "Media") {
+			div.classList.add("media");
+			div.innerHTML = `
+			        ${item.embed.html}
+				`;
 			}
 		}
 		if (item.title == "stylesheet") {
@@ -137,6 +117,3 @@ function makeRequest() {
 		.catch((error) => console.error(error));
 }
 document.addEventListener("DOMContentLoaded", init);
-</script>
-    </body>
-</html>

@@ -151,3 +151,22 @@ img {
     display: block;
     border: 1px solid black;
 }
+.media {
+  margin: 2em auto;
+}
+
+.media > * {
+  max-width: 100%;
+  margin: 0 auto;
+  display: block;
+}
+
+.video {
+  margin: 2em auto;
+}
+
+.video > * {
+  max-width: 100%;
+  margin: 0 auto;
+  display: block;
+}

@@ -99,12 +99,12 @@ label {
     margin: 20px 20px 20px 20px;
     line-height: 25px;
 }
-#planets {
+#channels {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     grid-gap: 10px;
 }
-#planets a {
+#channels a {
     border: 1px solid var(--ltforeground);
     padding: 1em;
     text-decoration: none;
@@ -115,7 +115,7 @@ label {
     text-align: center;
     justify-content: center;
 }
-#planets a:hover {
+#channels a:hover {
     border: 1px solid var(--ltforeground);
 }
 footer {
