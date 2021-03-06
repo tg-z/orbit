@@ -43,6 +43,11 @@ function init() {
 function setupContent(data) {
 	data.map((item) => {
 		var div = document.createElement("div");
+		<!-- if (item.title) { -->
+		<!-- 	div.classList.add("channel-info"); -->
+		<!-- 	div.innerHTML = ` -->
+		<!-- 		<h1>${item.title}</h1> -->
+		<!-- 		`; -->
 		if (item.class == "Text") {
 			div.classList.add("text");
 			div.innerHTML = `
@@ -61,7 +66,7 @@ function setupContent(data) {
 		} else if (item.class == "Image") {
 			div.classList.add("image");
 			div.innerHTML = `
-                                <figure><img src="${item.image.large.url}"/></figure>
+				<figure><img src="${item.image.large.url}" alt="${item.title}"/></figure>
                                 <caption>${item.content}</caption>
                             `;
 		} else if (item.class == "Attachment") {
