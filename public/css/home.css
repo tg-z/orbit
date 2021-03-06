@@ -1,132 +1,151 @@
-* { box-sizing: border-box; }
+* {
+	box-sizing: border-box;
+}
 :root {
-  --ltbackground: #fff;
-  --ltforeground: #333;
-  --gray: #828282;
-  --ltgray: #BDBDBD;
+	--ltbackground: #fff;
+	--ltforeground: #333;
+	--gray: #828282;
+	--ltgray: #bdbdbd;
 }
 body {
-    padding: 8px;
-    font-family: Arial, Helvetica, sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -webkit-text-size-adjust: none;
-    -moz-osx-font-smoothing: grayscale;
-    background: var(--ltbackground);
-    color: var(--ltforeground);
+	padding: 8px;
+	font-family: Arial, Helvetica, sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-webkit-text-size-adjust: none;
+	-moz-osx-font-smoothing: grayscale;
+	background: var(--ltbackground);
+	color: var(--ltforeground);
 }
 a {
-  color: var(--ltforeground);
+	color: var(--ltforeground);
 }
 a:hover {
-  color: var(--ltforeground);
+	color: var(--ltforeground);
 }
-h1, h2, h3, h4, a, ul, ol, li, p, figure {
-    font-weight: normal; */
-    margin: 0;
-    padding: 0;
+h1,
+h2,
+h3,
+h4,
+a,
+ul,
+ol,
+li,
+p,
+figure {
+	font-weight: normal;
+	margin: 0;
+	padding: 0;
 }
 h1 {
-    font-weight: bold;
+	font-weight: bold;
 }
-h1, h2, h3, h4, ul, ol, p {
-    margin-bottom: 1.3em;
+h1,
+h2,
+h3,
+h4,
+ul,
+ol,
+p {
+	margin-bottom: 1.3em;
 }
-ol li, ul li {
-    list-style-position: inside;
+ol li,
+ul li {
+	list-style-position: inside;
 }
 ul li {
-    list-style-type: none;
-    margin-bottom: 1em;
+	list-style-type: none;
+	margin-bottom: 1em;
 }
 #home {
-    color: var(--ltforeground);
+	color: var(--ltforeground);
 }
 h1 {
-    font-size: 300% !important;
-    margin-bottom: .5em !important;
+	font-size: 300% !important;
+	margin-bottom: 0.5em !important;
 }
-h1, h2 {
-    font-weight: bold;
+h1,
+h2 {
+	font-weight: bold;
 }
 label {
-    display: inline-block;
-    margin-bottom: .2em;
+	display: inline-block;
+	margin-bottom: 0.2em;
 }
-#toggle-theme{
-    position: fixed;
-    top: 2.5em;
-    right: 2em;
-    z-index: 10000;
+#toggle-theme {
+	position: fixed;
+	top: 2.5em;
+	right: 2em;
+	z-index: 10000;
 }
-#repo{
-    position: fixed;
-    font-size: 15px;
-    bottom: 2em;
-    right: 2em;
-    z-index: 10000;
+#repo {
+	position: fixed;
+	font-size: 15px;
+	bottom: 2em;
+	right: 2em;
+	z-index: 10000;
 }
 #repo a {
-    color: var(--gray);
-    transition: color .5s ease;
+	color: var(--gray);
+	transition: color 0.5s ease;
 }
 #repo a:hover {
-    color: var(--ltforeground);
+	color: var(--ltforeground);
 }
-#post{
-    position: fixed;
-    top: 7em;
-    right: 2em;
-    z-index: 10000;
+#post {
+	position: fixed;
+	top: 7em;
+	right: 2em;
+	z-index: 10000;
 }
 #color {
-    height: 50px;
-    width: 50px;
-    padding: 0;
-    outline: 0;
-    border: 0;
+	height: 50px;
+	width: 50px;
+	padding: 0;
+	outline: 0;
+	border: 0;
 }
 .button {
-    border-radius: 5px;
-    background: #e0e0e0;
+	border-radius: 5px;
+	background: #e0e0e0;
 }
 #welcome {
-    display: grid;
-    grid-template-columns: 200px .7fr;
-    grid-gap: 3em;
+	display: grid;
+	grid-template-columns: 200px 0.7fr;
+	grid-gap: 3em;
 }
 #about {
-    font-size: 16px !important;
-    margin: 20px 20px 20px 20px;
-    line-height: 25px;
+	font-size: 16px !important;
+	margin: 20px 20px 20px 20px;
+	line-height: 25px;
 }
 #channels {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    grid-gap: 10px;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+	grid-gap: 10px;
 }
 #channels a {
-    border: 1px solid var(--ltforeground);
-    padding: 1em;
-    text-decoration: none;
-    border-radius: 8px;
-    font-size: 14px;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
+	border: 1px solid var(--ltforeground);
+	padding: 1em;
+	text-decoration: none;
+	border-radius: 8px;
+	font-size: 14px;
+	display: flex;
+	align-items: center;
+	text-align: center;
+	justify-content: center;
 }
 #channels a:hover {
-    border: 1px solid var(--ltforeground);
+	border: 1px solid var(--ltforeground);
 }
 footer {
-  text-align: center;
-  padding: 40px;
-  clear: both;
-  position: relative;
-  display: block;
+	text-align: center;
+	padding: 40px;
+	clear: both;
+	position: relative;
+	display: block;
 }
 @media (max-width: 700px) {
-    #welcome {
-        grid-template-columns: 1fr;
-    }
+	#welcome {
+		grid-template-columns: 1fr;
+	}
 }
