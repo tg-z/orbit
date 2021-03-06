@@ -1,81 +1,96 @@
-* { box-sizing: border-box; }
-
-article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
-    display: block;
+* {
+	box-sizing: border-box;
 }
 
-p, a {
-    font-size: 16px;
-    margin: 2.5em;
-    line-height:25px;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+	display: block;
+}
+
+p,
+a {
+	font-size: 16px;
+	margin: 2.5em;
+	line-height: 25px;
 }
 
 a:visited {
-    color: blue;
+	color: blue;
 }
 
 img {
-    max-width: 100%;
-    max-height: 100%;
-    margin: 2px auto;
-    display: block;
+	max-width: 100%;
+	max-height: 100%;
+	margin: 2px auto;
+	display: block;
 }
 
 #load-more {
-    text-align: center;
-    margin: 2em;
-    margin-bottom: 3em;
-    cursor: pointer;
-    display: none;
-    padding: 2px;
+	text-align: center;
+	margin: 2em;
+	margin-bottom: 3em;
+	cursor: pointer;
+	display: none;
+	padding: 2px;
 }
 
 #load-more.able-to-load {
-    display: block;
+	display: block;
 }
 
 #loading.done-loading {
-    display: none;
+	display: none;
 }
 
-#load-more, #loading {
-    margin-top: 8px;
-    font-size: initial;
-    padding: 1em;
-    border-radius: 0;
-    background: white;
-    border: 1px solid rgb(219, 219, 219);
+#load-more,
+#loading {
+	margin-top: 8px;
+	font-size: initial;
+	padding: 1em;
+	border-radius: 0;
+	background: white;
+	border: 1px solid rgb(219, 219, 219);
 }
 
 #load-more:hover {
-    border-radius:0;
+	border-radius: 0;
 }
 
-.block_link, .block_link:visited {
-    color: blue;
-    display: block;
+.link,
+.link:visited {
+	color: blue;
+	display: block;
 }
 
 .block_pdf {
-    display: block;
-    border: 1px solid black;
+	display: block;
+	border: 1px solid black;
 }
 .media {
-  margin: 2em auto;
+	margin: 2em auto;
 }
 
 .media > * {
-  max-width: 100%;
-  margin: 0 auto;
-  display: block;
+	max-width: 100%;
+	margin: 0 auto;
+	display: block;
 }
 
 .video {
-  margin: 2em auto;
+	margin: 2em auto;
 }
 
 .video > * {
-  max-width: 100%;
-  margin: 0 auto;
-  display: block;
+	max-width: 100%;
+	margin: 0 auto;
+	display: block;
 }

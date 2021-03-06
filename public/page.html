@@ -51,7 +51,7 @@ function setupContent(data) {
 		} else if (item.class == "Link") {
 			div.classList.add("link");
 			div.innerHTML = `
-                                <a href="${item.source.url}" class="block_link" target="_blank">${item.title}</a>
+                                <a href="${item.source.url}" target="_blank">${item.title}</a>
                             `;
 		} else if (item.class == "Media") {
 			div.classList.add("media");
