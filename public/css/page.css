@@ -83,6 +83,7 @@ img {
 .link:visited {
 	color: inherit;
 	display: block;
+	text-overflow: ellipsis;
 }
 
 .block_pdf {
