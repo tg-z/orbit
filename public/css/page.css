@@ -4,11 +4,16 @@
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }
+
 :root {
 	--background: #fff;
 	--foreground: #333;
 	--gray: #828282;
 	--ltgray: #bdbdbd;
+}
+
+body {
+	font-family: Arial, Helvetica, sans-serif;
 }
 
 article,
@@ -30,10 +35,6 @@ a {
 	font-size: 16px;
 	margin: 2.5em;
 	line-height: 25px;
-}
-
-a:visited {
-	color: inherit;
 }
 
 img {
