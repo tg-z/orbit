@@ -1,7 +1,7 @@
 {
   "name": "orbit",
   "version": "1.0.0",
-  "description": "",
+  "description": "a page creator built on are.na.",
   "main": "app.js",
   "scripts": {
     "start": "nodemon app.js",
